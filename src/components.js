@@ -15,7 +15,7 @@ const testBusiness = {
 }
 
 // A compnent for displaying a single busnesses information.
-function BusinessEntry() {
+function BusinessListItem() {
   return (
     <div>
       <img src={testBusiness.imageSrc} />
@@ -35,4 +35,4 @@ function BusinessList() {
 
 }
 
-export default BusinessEntry;
+export default BusinessListItem;
