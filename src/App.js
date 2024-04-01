@@ -3,8 +3,8 @@ import BusinessList from "./components/BusinessList";
 
 const App = () => {
   return (
-    <div>
-      <h1 className="bg-yellow-500 py-5 text-center text-2xl font-semibold text-white">
+    <div className="mb-20">
+      <h1 className="bg-amber-700 py-5 text-center text-4xl font-semibold text-white">
         Ravenous
       </h1>
       <SearchBar />
