@@ -18,19 +18,18 @@ const Business = () => {
   return (
     <div>
       <img src={business.imageSrc} alt={business.name} />
-      <h2 className="mt-2 text-xl font-bold">{business.name}</h2>
-
+      <h2 className="mt-2 text-xl font-bold text-gray-900">{business.name}</h2>
       <div className="mt-2 flex">
-        <div>
+        <div className="flex-auto text-gray-600">
           <p>{business.address}</p>
           <p>{business.city}</p>
           <p>{business.state}</p>
           <p>{business.zipCode}</p>
         </div>
-        <div>
-          <p>Category: {business.category}</p>
-          <p>Rating: {business.rating}</p>
-          <p>Number of Reviews: {business.reviewCount}</p>
+        <div className="flex-auto text-right text-gray-600">
+          <p>{business.category}</p>
+          <p>{business.rating} / 5</p>
+          <p>{business.reviewCount} reviews</p>
         </div>
       </div>
     </div>
